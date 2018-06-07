@@ -1,0 +1,21 @@
+.highcost{
+background-color: rgb(244, 101, 65);
+            height: 35px;
+            width: 35px;
+            
+}
+.lowcost{
+    background-color: rgb(69, 244, 66);
+    height: 35px;
+    width: 35px;
+}
+.mediumcost{
+    background-color:rgb(244, 65, 109) ; 
+    height: 35px;
+    width: 35px;
+}
+.costsection{
+    border: #2874f0 10px solid; 
+    padding: 5%;
+    margin-top: 20px;
+}

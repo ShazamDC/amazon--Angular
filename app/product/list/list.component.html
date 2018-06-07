@@ -1,0 +1,10 @@
+<div class="container ">
+<div class="row costsection" >
+ <div class=" col col-lg-4"> <div class="highcost"></div> <div>HIGHCOST</div>  </div>
+ <div class=" col col-lg-4"> <div class="mediumcost"></div>MEDIUM COST  </div>
+ <div class=" col col-lg-4"> <div class="lowcost"></div> LOW COST </div>
+</div>
+</div>
+<div *ngFor="let item of itemList">
+    <item-comp (addedToCart)="toggleAddToCart($event)"   [itemDetails]="item"></item-comp>
+</div>

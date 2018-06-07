@@ -1,0 +1,27 @@
+#offersofday{
+    margin: 50px 0px; 
+}
+#offersofday .offer{
+
+width: 250px;
+}
+#offersofday  img{
+    width: 100%;
+}
+
+#topmobiles{
+    margin: 50px 0px; 
+}
+#topmobiles .heading{
+margin: 150px 50px 5px;    
+}
+#topmobileslink{
+    padding-left: 10px;
+    margin:50px 50px;
+}
+#topmobiles .offer{
+width: 70px;
+}
+#topmobiles  img{
+    width: 100%;
+}

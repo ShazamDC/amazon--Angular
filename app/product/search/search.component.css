@@ -1,0 +1,68 @@
+#amazon-header{
+    background-color: #232f3e;
+    padding: 10px;
+}
+
+
+.nav-search-dropdown {
+    width: 40px;
+    height: 36px;
+    border-radius: 6px 0px 0px 6px;
+    border: none;
+    background-color: #dadada;
+    font-size: 15px;
+    padding: 6px 0px;
+    color: rgba(0,0,0,.5)
+}
+#search-bar{
+    height: 34px;
+    
+    border: none;
+    outline: 0;
+    font-size: 15px;
+    width: 80%;
+    margin-left: 0px;
+    padding-left: 0px;
+
+}
+#search-btn {
+    height: 37px;
+    width: 35px;
+    background-color: #febd69;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+#search-btn:hover{
+    background-color: #f3a847;
+}
+.down-bar{
+    padding:50px 0px 0px 0px;
+}
+.right-bar{
+    padding:0px 50px;
+}
+.left-bar{
+    padding:0px 50px;
+}
+
+.menu-bar div a{
+    color: #ccc;
+    padding: 0 9px;
+    margin-bottom: 25px;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+}
+.side-bar{
+    color: white;
+}
+
+.side-bar div a{
+    color: white;
+    text-decoration: none;
+}
+.header-logo{
+    width: 200px;
+}

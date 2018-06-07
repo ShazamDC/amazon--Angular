@@ -1,0 +1,48 @@
+<div [ngClass]="{'highcost':itemDetails.price>45000, 'mediumcost':itemDetails.price>=25000 && itemDetails.price<=45000,'lowcost':itemDetails.price < 25000}">
+    <div id="electronics">
+        <div >
+            <div class="mobile-items ">
+              <div class="row">
+                  <div class="col col-lg-3">         
+                <img class="mobile-images" [src]="itemDetails.url">
+                </div>
+                <div class="col-lg-9">
+                    <div class="mobile-name">{{itemDetails.name}}</div>
+                    <div>
+                     <span class="after-discount"><h1 id="sellprice"> &#8377; {{itemDetails.price-(itemDetails.discount*itemDetails.price/100)}} </h1></span>
+                     <span ><h2 id="markprice">&nbsp;  &#8377;{{itemDetails.price}}</h2></span>
+                      <span class="discount" > <h4>&nbsp; {{itemDetails.discount}} % Off </h4></span>                                            
+                    </div>
+                     <div class="discount">Extra {{itemDetails.discount*itemDetails.price/100}} &nbsp; discount</div>
+                     <div class="row">
+                        <div class="col col-lg-2">
+                           <span>Highlights:</span>
+                           </div>
+                           <div class="col col-lg-4">
+                           <div *ngFor="let highlight of itemDetails.highlights">
+                               {{highlight}}
+                           </div> 
+                        </div>
+                        <div class="col col-lg-2">
+                            <span>Payment Options:</span></div>
+                            <div class="col col-lg-4">
+                            <div *ngFor="let option of itemDetails.paymentOptions">
+                                {{option}}
+                            </div>
+                        </div>
+                    </div>
+                        <div class="mobile-desc"><div> <h3>Descriton</h3> </div>{{itemDetails.desc}}</div>
+                       <div class="row">
+                           <div class="col-lg-6"><span (click)="AddedToCart()" class="add-cart" ><div   class="addtocart">ADD TO CART</div></span> </div>
+                           <div class="col-lg-6"><span class="buy-now" ><div   class="buynow">BUY NOW</div></span></div>
+                       </div>
+
+                    </div>
+                  
+
+                </div>
+
+                </div>
+                </div>
+        </div>
+    </div>
